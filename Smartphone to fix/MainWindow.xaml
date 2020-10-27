@@ -1,0 +1,41 @@
+﻿<Window x:Class="Smartphone_to_fix.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Smartphone_to_fix"
+        mc:Ignorable="d"
+        Title="Smartphone to fix" Height="465" Width="1200">
+
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Click="new_Click" Header="_Nouveau" />
+                <MenuItem Click="open_Click" Header="_Ouvrir" />
+                <MenuItem Click="saver_Click" Header="_Enregistrer" />
+                <MenuItem Click="save_Click" Header="_.Enregistrer-sous" />
+                <Separator />
+                <MenuItem Click="openAutotimer_Click" Header="_Ouvrir Sauvegarde Autotimer" />
+                <Separator />
+                <MenuItem Click="print_Click" Header="_Imprimer" />
+                <Separator />
+                <CheckBox x:Name="Nautosave" IsChecked="true" Content="Exit Auto-Sauvegarde"/>
+                <MenuItem x:Name="exiter" Click="exiter_Click" Header="_Exit" />
+
+            </MenuItem>
+            <MenuItem Header="_Ajouter">
+                <MenuItem x:Name="newClient" Click="newClient_Click" Header="_Nouveau client" />
+                <MenuItem x:Name="newCSV" Click="newCSV_Click" Header="_.Liste Clients (CSV)" />
+            </MenuItem>
+            <MenuItem Click="addCase_Click" Header="_Ajouter une case vide" />
+        </Menu>
+        <Grid>
+
+
+            <Label x:Name="Nsaveto" Content="Non-enregistrer" HorizontalAlignment="Left" Margin="926,381,0,0" VerticalAlignment="Top" FontSize="9" Opacity="0.498" RenderTransformOrigin="0.533,0.5"/>
+            <DataGrid x:Name="Mygrid" HorizontalAlignment="Left" Height="348" Margin="29,28,0,0" VerticalAlignment="Top" Width="1130"/>
+        </Grid>
+
+    </DockPanel>
+
+</Window>
