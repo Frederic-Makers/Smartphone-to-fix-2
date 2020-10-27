@@ -15,7 +15,7 @@ using System.Windows.Shapes;
 namespace Smartphone_to_fix
 {
     /// <summary>
-    /// Interaction logic for WindowADD.xaml
+    /// Interaction logic for WindowADD.xaml222
     /// </summary>
     public partial class WindowADD : Window
     {
