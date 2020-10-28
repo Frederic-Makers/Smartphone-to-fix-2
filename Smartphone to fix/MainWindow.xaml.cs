@@ -24,7 +24,7 @@ namespace Smartphone_to_fix
     /// Interaction logic for MainWindow.xaml44161414
     /// </summary>
     /// 
-    //uefioegoheaugegoughaehigh
+    //COCOCHANEL
     public partial class MainWindow : Window
     {
         public String savefile = null;
@@ -225,6 +225,21 @@ namespace Smartphone_to_fix
             {
                 printDlg.PrintVisual(Mygrid, "Grid printing");
             }
+        }
+
+        private void CATotale_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RepEnCour_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RepTerminer_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

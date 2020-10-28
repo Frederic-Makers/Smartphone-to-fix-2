@@ -28,6 +28,11 @@
                 <MenuItem x:Name="newCSV" Click="newCSV_Click" Header="_.Liste Clients (CSV)" />
             </MenuItem>
             <MenuItem Click="addCase_Click" Header="_Ajouter une case vide" />
+            <MenuItem Header="_Requête">
+                <MenuItem x:Name="CATotale" Click="CATotale_Click" Header="_Afficher le chiffre d'affaire Totale" />
+                <MenuItem x:Name="RepEnCour" Click="RepEnCour_Click" Header="_Afficher les réparation en cours" />
+                <MenuItem x:Name="RepTerminer" Click="RepTerminer_Click" Header="_Afficher les réparation Terminé" />
+            </MenuItem>
         </Menu>
         <Grid>
 
